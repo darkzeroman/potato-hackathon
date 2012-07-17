@@ -1,0 +1,73 @@
+body {
+	text-align: center;
+	top: 0px;
+	background-image: url('../img/MrPototo_bg.png');
+	background-repeat: no-repeat;
+}
+
+marquee {
+	position: absolute;
+	left: 950px;
+	top: 370px;
+	color: #1ad807;
+}
+
+.windowforeground {
+	position: absolute;
+	left: 100px;
+	top: 150px;
+	z-index: 10;
+}
+
+.windowbackground {
+	position: absolute;
+	left: 100px;
+	top: 150px;
+	z-index: 1;
+}
+
+.controls {
+	background-color: black;
+	position:absolute;
+	top: 25px;
+	left: 10px;
+	width: 250px;
+	display: block;
+	color: white;
+	border-radius: 15px;
+}
+
+.controls span {
+	text-align: left;
+	padding-bottom: 0px;
+}
+
+.controlsheader {
+	position:absolute;
+	top: 4px;
+	left: 20px;
+	text-align: left;
+	padding: 0px;
+	margin: 0px;
+	width: 250px;
+	text-decoration: underline;
+}
+
+.controls form {
+	padding-left: 20px;
+	text-align: left;
+}
+
+.controlsheader span {
+	margin: 0px;
+	padding: 0px;
+	font-size: 14px;
+	margin-right: 10px;
+}
+.shades {
+	width: 200px;
+	height: 200px;
+	left: 500px;
+	position: absolute;
+	background: red;
+}

@@ -1,0 +1,74 @@
+<html>
+<head>
+     <script language="javascript" src="js/jquery-1.7.2.min.js"></script>
+     <script language="javascript" src="js/marquee.js"></script>
+     <script language="javascript" src="js/potato.js"></script>
+     <script language="javascript" src="js/jquery.hashForm.js"></script>
+     <link rel=StyleSheet href="css/style.css" type="text/css">
+</head>
+<body>
+
+     <marquee behavior="scroll" direction="left" scrollamount="2" height="17" width="95">
+          <span class="marqueetext"></span>
+     </marquee>
+     <br />
+     <!--<img src="img/window.png" class="windowforeground">
+     <img src="img/farmfield.jpeg" class="windowbackground"> -->
+
+    <div class="controlsheader">
+	    <span class="controlstoggle">
+	    	controls
+	    </span>
+	    <span class="controlsrefresh">  
+	    	refresh
+	    </span>
+	    <span class="test">
+	    	test
+	    </span>
+	</div>
+
+     <div class="controls">
+     	<br>
+     	<form id="controlsform">
+     		<span> 
+     			Sex:
+     		</span>
+     		<br>
+			<input type="radio" name="sex" value="male" checked /> Male<br />
+			<input type="radio" name="sex" value="female" /> Female
+			<br>
+			<span>
+				Age:
+			</span>
+			<br>
+			<select name="age">
+				<option value="0-15"> 0-15 </option>
+				<option value="0-15"> 16-24 </option>
+				<option value="0-15"> 25-34 </option>
+				<option value="0-15"> 35-55 </option>
+				<option value="0-15"> 56+ </option>
+			</select>
+			<br>
+			<span> Location: </span>
+			<br>
+			<select name="location">
+				<option value="US"> US </option>
+				<option value="UK"> UK </option>
+				<option value="NZ"> NZ </option>
+			</select>
+			<br>
+			<span> Interest: </span>
+			<br>
+			<select name="interest">
+				<option value="shopping"> Shopping </option>
+				<option value="traveling"> Traveling </option>
+				<option value="eating"> Eating </option>
+			</select>
+			<br/>
+			<br/>
+			<input type="button" value="Submit" class="submit"/>
+		</form>
+		<div class="shades">
+		</div>
+</body>
+</html>
