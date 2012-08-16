@@ -4,10 +4,13 @@
      <script language="javascript" src="js/marquee.js"></script>
      <script language="javascript" src="js/potato.js"></script>
      <script language="javascript" src="js/jquery.hashForm.js"></script>
+     <script language="javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+
+     
      <link rel=StyleSheet href="css/style.css" type="text/css">
 </head>
 <body>
-
+	<div class="container">
      <marquee behavior="scroll" direction="left" scrollamount="2" height="17" width="95">
           <span class="marqueetext"></span>
      </marquee>
@@ -26,7 +29,33 @@
 	    	test
 	    </span>
 	</div>
+	<div class="trophy-curtain">
+	</div>
+	<div class="window">
+		<div class="blinds">
+			<div class="blinds-retract">
+			</div>
+		</div>
+		<div class="pane">
+			<img src="img/windowpane.png" class="windowbackground">
+		</div>
+		<div class="windowbackground">
+			<img class="windowbackground-image" src="">
+		</div>
+	</div>
+	<div class="trophies">
+		<div class="row1">
 
+		</div>
+		<div class="row2">
+		</div>
+	</div>
+	<div class="potato-all">
+		<div class="potato">
+		</div>
+		<div class="shadow">
+		</div>
+	</div>
      <div class="controls">
      	<br>
      	<form id="controlsform">
@@ -43,8 +72,8 @@
 			<br>
 			<select name="age">
 				<option value="0-15"> 0-15 </option>
-				<option value="0-15"> 16-24 </option>
-				<option value="0-15"> 25-34 </option>
+				<option value="16-24"> 16-24 </option>
+				<option value="25-34"> 25-34 </option>
 				<option value="0-15"> 35-55 </option>
 				<option value="0-15"> 56+ </option>
 			</select>
@@ -52,9 +81,9 @@
 			<span> Location: </span>
 			<br>
 			<select name="location">
-				<option value="US"> US </option>
-				<option value="UK"> UK </option>
-				<option value="NZ"> NZ </option>
+				<option value="NY"> NY </option>
+				<option value="Paris" checked> Paris </option>
+				<option value="London"> London </option>
 			</select>
 			<br>
 			<span> Interest: </span>
@@ -64,11 +93,18 @@
 				<option value="traveling"> Traveling </option>
 				<option value="eating"> Eating </option>
 			</select>
+			<br>
+			<span> Activity Level: </span>
+			<br>
+			<select name="activitylevel">
+				<option value="1"> Low (1)</option>
+				<option value="2"> Moderate (2) </option>
+				<option value="3"> High (3)</option>
+			</select>
 			<br/>
 			<br/>
 			<input type="button" value="Submit" class="submit"/>
 		</form>
-		<div class="shades">
-		</div>
+	</div>
 </body>
 </html>

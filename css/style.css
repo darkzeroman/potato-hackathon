@@ -1,8 +1,15 @@
 body {
 	text-align: center;
-	top: 0px;
+	margin: 0px;
+}
+
+.container {
+	top: -5px;
 	background-image: url('../img/MrPototo_bg.png');
 	background-repeat: no-repeat;
+	width: 1200px;
+	height: 700px;
+
 }
 
 marquee {
@@ -20,11 +27,10 @@ marquee {
 }
 
 .windowbackground {
-	position: absolute;
-	left: 100px;
-	top: 150px;
+	position: relative;
 	z-index: 1;
 }
+
 
 .controls {
 	background-color: black;
@@ -32,7 +38,7 @@ marquee {
 	top: 25px;
 	left: 10px;
 	width: 250px;
-	display: block;
+	display: none;
 	color: white;
 	border-radius: 15px;
 }
@@ -51,6 +57,12 @@ marquee {
 	margin: 0px;
 	width: 250px;
 	text-decoration: underline;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 .controls form {
@@ -64,10 +76,85 @@ marquee {
 	font-size: 14px;
 	margin-right: 10px;
 }
-.shades {
-	width: 200px;
-	height: 200px;
-	left: 500px;
+.blinds-retract {
+	height: 275px;
+	background: #b92b2b;
+	background-image: url('../img/curtain.png');
 	position: absolute;
-	background: red;
+	width: 200px;
+
+}
+
+.blinds-bottom {
+	height: 20px;
+	background-color: black;
+	border-radius: 15px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.blinds {
+	position: relative;
+	z-index: 10;
+
+}
+
+.window {
+	width: 200px;
+	left: 700px;
+	top: -20px;
+	position:relative;
+
+
+
+}
+
+.pane {
+	left: 15px;
+	position: absolute;
+	top: 0px;
+	background-repeat: no-repeat;
+	width: inherit;
+	height: 300px;
+	z-index: 9;
+}
+
+.potato-all{
+	position: absolute;
+	left: 250px;
+	bottom: 1000px;
+	width: 559px;
+	height: 607px;
+	background-image: url('../img/potato_adult.png');
+	background-repeat: no-repeat;
+}
+
+.row1 {
+	background-image: url('../img/trophy_row1.png');
+	width: 159px;
+	height: 39px;
+	left: 981px;
+	top: 188px;
+	position:absolute;
+}
+
+.row2 {
+	background-image: url('../img/trophy_row2.png');
+	width: 159px;
+	height: 39px;
+	left: 981px;
+	top: 240px;
+	position:absolute;
+
+}
+
+.trophy-curtain {
+	position: relative;
+	left: 920px;
+	background-image: url('../img/curtainrotated.png');
+	width: 259px;
+	height: 168px;
+	top:133px;
+	z-index: 100;
+
 }
