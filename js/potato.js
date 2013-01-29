@@ -17,17 +17,15 @@ $(document).ready(function(){
 
 	$('.controlsrefresh').click(function(){
 		reseteverything();
-		//update();
+
 
 	});
 
 	$('.test').click(function(){
 		update();
-		//alert('lol');
+
 
 	});
-
-//	$('.test').click();
 
 	update();
 
